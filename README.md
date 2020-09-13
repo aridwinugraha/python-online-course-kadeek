@@ -11,3 +11,7 @@
 ## Run perintah venv
 
 . venv/bin/activate
+
+## Session 2
+
+- Tipe Data, Operator dan String Formatting
