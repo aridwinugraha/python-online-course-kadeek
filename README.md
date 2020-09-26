@@ -15,3 +15,15 @@
 ## Session 2
 
 - Tipe Data, Operator dan String Formatting
+
+## Session 3
+
+- Fungsi dan Perulangan
+
+## Session 4
+
+- Modul dan package
+
+## Session 5
+
+- Flask, Bikin Web di python
