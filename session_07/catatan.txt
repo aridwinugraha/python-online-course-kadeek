@@ -1,0 +1,1 @@
+Session ini hanya menginstall mongodb di wsl, doc nya bisa dilihat di readme.md ya..
