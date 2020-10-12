@@ -8,13 +8,12 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 mongodb_host = os.environ.get('MONGO_HOST', 'localhost')
 mongodb_port = int(os.environ.get('MONGO_PORT', '27017'))
-client = MongoClient(mongodb_host, mongodb_port)   
+client = MongoClient(mongodb_host, mongodb_port)
 
 @app.route("/")
 def home():
-    db = client.rental 
+    db = client.rental
     person = db.person.find()
-    
     result = []
     for i in person:
         result.append(i)
@@ -25,7 +24,6 @@ def home():
 
 @app.route("/insert")
 def insert():
-
     return render_template(
         'insert.html', my_string="Let's insert some data!",
         title="Insert")
@@ -49,8 +47,7 @@ def actinsert():
 
 @app.route("/update/<id>")
 def update(id):
- 
-    db = client.rental 
+    db = client.rental
     person = db.person.find({"_id":ObjectId(id)})
     result = []
     for i in person:
